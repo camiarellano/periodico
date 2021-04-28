@@ -1,86 +1,208 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>El Faro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Camila Arellano">
+    <title>El Faro - Periódico</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#7952b3">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-	<header>
-		<img src="./imagenes/logo.png" width="100px" alt="logo">
-		<h1>El Faro</h1>
-	</header>
-	<hr>
-	<nav>
-	  <ul>
-    	<li><a href="./index.html">Inicio</a></li>
-	    <li><a href="./deportes.html">Deportes</a></li>
-	    <li><a href="./negocios.html">Negocios</a></li>
-	  </ul>
-	</nav>
-	<hr>
-	<section>
-			<h2>Noticias</h2>
-			<table>
-			  <thead>
-			    <tr>
-				     <th>Titulo</th>
-				     <th>Categoria</th>
-				     <th>Texto del artículo</th>
-				     <th>Apoyo grafico</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <td>Piñera contacta a timoneles de Chile Vamos y les transmite decisión de postergar elecciones para mayo</td>
-			      <td>Política</td>
-			       <td>
-			       		<p>El Mandatario informó durante esta jornada, según fuentes del oficialismo, que está viendo dos alternativas de fecha para realizar los comicios: el 8 y 9 de mayo o la semana siguiente del 15 y 16. El Jefe de Estado además convocó a los ministros del comité político y al de Salud a una reunión para este domingo a las 19.30 horas. Partidos de Chile Vamos esperan que el Mandatario comunique hoy su determinación o más tardar mañana temprano.</p>
-			       </td>
-			       <td>
-			       		<audio width="150" controls>
-							  <source src="https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/2587/81ebdf32055cc6bb8aab948b51d58d9f/AudioTest%20(1).ogg"type="audio/ogg">
-						</audio>
-			       	</td>
-			    </tr>
-			   	<tr>
-			      	<td>Coronavirus en EE.UU.: 3 claves que explican el vertiginoso ritmo de vacunación contra la covid-19 en el país más golpeado por la pandemia</td>
-			      	<td>Internacional</td>
-			      	<td>
-			       		Estados Unidos está superando sus previsiones más optimistas de vacunación.
+    <div class="navbar navbar-dark bg-dark shadow-sm ">
+        <div class="container">
+            <nav class="container d-flex flex-column flex-md-row justify-content-between">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-book" viewBox="0 0 16 16">
+                        <path
+                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                    </svg>
+                    <strong class="pl-5"> El Faro</strong>
+                </a>
+                <a class="py-2 d-none d-md-inline-block link-header" href="./deportes.html">Deportes</a>
+                <a class="py-2 d-none d-md-inline-block link-header" href="./negocios.html">Negocios</a>
+                <a class="py-2 d-none d-md-inline-block link-header" href="./articulos.html">Articulos</a>
+            </nav>
+        </div>
+    </div>
 
-						Este martes, el gobierno anunció que a partir del 19 de abril los adultos de cualquier edad podrán recibir la vacuna, mucho antes de lo previsto por el presidente Joe Biden, quien desde que asumió la presidencia el 20 de enero hizo de la vacunación su prioridad.			       	
-					</td>
-			        <td>
-			         	<video width="150"  controls>
-					  		<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-			        </td>
-			    </tr>
-		   	 	<tr>
-			      	<td>Dirección Meteorológica emite alerta por altas temperaturas entre la RM y el Maule</td>
-			      	<td>Meteorología</td>
-			       <td>
-			       		Aunque hace algunas semanas la Dirección Meteorológica detalló que el de 2021, fue el verano más frío de los últimos diez años, las situación del estado del tiempo en las últimas semanas de la temporada estival supone un regreso momentáneo a las temperaturas habituales.
 
-						El organismo emitió este domingo un aviso de evento de altas temperaturas entre la RM y la zona del Maule. Estas se registrarán durante los días lunes 1, miércoles 3 y jueves 4, en las zonas de valles y precordillera.
-					</td>
-			         <td>
-			       		<audio width="150" controls>
-							  <source src="https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/2587/81ebdf32055cc6bb8aab948b51d58d9f/AudioTest%20(1).ogg"type="audio/ogg">
-						</audio>
-			       	</td>
-			    </tr>
-			  </tbody>
-			</table>
-	</section>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
+                aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="https://www.latercera.com/resizer/AIprDTxjTUHlyCSZzKzq6fDEJs0=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/TYKDR3C4AVFN3HCMGBLSQAYUCQ.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-4 fst-italic">POLÍTICA</h1>
+                        <p class="lead my-3">Duro revés para el gobierno: TC resuelve no acoger a trámite requerimiento
+                            con que La Moneda buscaba frenar proyecto de tercer retiro del 10%</p>
+                        <p class="lead mb-0"><a href="#" class="text-white fw-bold">Seguir leyendo...</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active carousel-item-start">
+                <img src="https://redgol.cl/__export/1619570737209/sites/redgol/img/2021/04/27/flamengo-la_calera_crop1619570736210.jpg_1693159006.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fst-italic">Deportes</h1>
+                        <p class="lead my-3">La Calera sufrió una dura goleada ante Flamengo y los chilenos perdieron
+                            por 4-1 en la segunda fecha del Grupo G de la Copa Libertadores 2021</p>
+                        <p class="lead mb-0"><a href="#" class="text-white fw-bold">Seguir leyendo...</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-next carousel-item-start">
+                <img src="https://media.cnnchile.com/sites/2/2020/04/SII-740x430.jpg" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1 class="display-4 fst-italic">Economía.</h1>
+                        <p class="lead my-3"> SII postergará pago de contribuciones a afectados por crisis sanitaria</p>
+                        <p class="lead mb-0"><a href="#" class="text-white fw-bold">Seguir leyendo...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Política</strong>
+                        <h3 class="mb-0">Tribunal Constitucional</h3>
+                        <div class="mb-1 text-muted">Abr 27</div>
+                        <p class="card-text mb-auto">¿Golpe blanco a Brahm? Así se gestó la derrota que el Tribunal
+                            Constitucional asestó al gobierno.</p>
+                        <a href="#" class="stretched-link">Ver más</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://www.latercera.com/resizer/p0zMpGFdZEfo6ZrEm2ck7wrgP_I=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/7CILDOEGBJAKDJOQHSV774EYYY.jpg"
+                            width="200" height="250" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Covid 19</strong>
+                        <h3 class="mb-0">Cuarentena</h3>
+                        <div class="mb-1 text-muted">Abr 26</div>
+                        <p class="mb-auto">Termina la cuarentena total en la RM: Vitacura, Providencia, Las Condes y
+                            otras siete comunas pasan a Fase 2 el jueves</p>
+                        <a href="#" class="stretched-link">Ver más</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src=" https://www.latercera.com/resizer/qb9nTA2DheYtEY56129UPO4uHlo=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/645BC6O56RBNJEMFPAG3STO6NQ.jpg"
+                            width="200" height="250" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">Deportes</strong>
+                        <h3 class="mb-0">Alexis Sanchez</h3>
+                        <div class="mb-1 text-muted">Abr 27</div>
+                        <p class="card-text mb-auto">¡Hermoso! Alexis Sánchez recuerda a Maradona al celebrar los 15
+                            años de su debut en la Roja: “Doy lo mejor para darles una pequeña alegría”</p>
+                        <a href="#" class="stretched-link">Ver más</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://redgol.cl/__export/1619548696168/sites/redgol/img/2021/04/27/alexis-seleccion_crop1619548568735.jpg_1693159006.jpg"
+                            width="200" height="250" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Economía</strong>
+                        <h3 class="mb-0">Cobre</h3>
+                        <div class="mb-1 text-muted">Abr 26</div>
+                        <p class="mb-auto">Precio del cobre alcanzó su mejor nivel en casi una década</p>
+                        <a href="#" class="stretched-link">Ver más</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://media.cnnchile.com/sites/2/2021/04/A_UNO_631301_752d3.jpg" width="200"
+                            height="250" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<footer>
-		<br>
-		<br>
-		<hr>
-		Periódico el faro 2021
-	</footer>
+    </main><!-- /.container -->
+
+    <footer class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">Periódico El Faro</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-4">El Periódico lider en noticias a nivel nacional</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" id="hora" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"></button>
+                    <a  href="./articulos.html" class="btn btn-outline-light btn-lg px-4">Articulos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
+<script>
+
+    function addZero(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    function getHour() {
+        var d = new Date();
+        var x = document.getElementById("hora");
+        var h = addZero(d.getHours());
+        var m = addZero(d.getMinutes());
+        var s = addZero(d.getSeconds());
+        x.innerHTML = h + ":" + m + ":" + s;
+    }
+
+    getHour();
+
+</script>
+
 </html>
